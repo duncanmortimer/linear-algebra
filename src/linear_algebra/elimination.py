@@ -54,7 +54,7 @@ def elimination_step(A):
         pivot_col = a[:, j]
         first_nonzero_i = i + 1 + np.argmax(np.abs(pivot_col[i + 1 :]))
         coefficient = -a[first_nonzero_i, j] / a[i, j]
-        return E((first_nonzero_i, j), coefficient)
+        return E((first_nonzero_i, i), coefficient)
 
     return DONE()
 
