@@ -9,3 +9,8 @@ I'm using Visual Studio Code, and trialing using a containerised dev environment
 ## Scripts
 
 - Start a jupyter server with the ```scripts/start_jupyter.sh``` script; the token for access is 'the_token'.
+
+## TODO
+
+- Split ```requirements.txt``` according to whether they're required for interactive, dev, or package usage.
+- Split up the docker image into a base python dev environment, and project specific layers
